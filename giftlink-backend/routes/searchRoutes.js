@@ -26,7 +26,7 @@ router.get('/', async (req, res, next) => {
             query.condition = req.query.condition; 
         }
         if (req.query.age_years) {
-            query.age_years = { $lte: parseInt(req.query.age_years) };
+            // query.age_years = { $lte: parseInt(req.query.age_years) };
             query.age_years = { $lte: parseInt(req.query.age_years) };
         }
 
